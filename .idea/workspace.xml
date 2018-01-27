@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be51d021-c24c-4b41-8ac8-383f02d2db2b" name="Default" comment="" />
+    <list default="true" id="be51d021-c24c-4b41-8ac8-383f02d2db2b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -14,12 +16,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="iohk.htm" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/iohk.htm">
+      <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="291">
+              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding>
+                <element signature="e#7162#8322#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GPUFluid.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/GPUFluid.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+              <folding>
+                <marker date="1516956410613" expanded="true" signature="452165:452201" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1875">
+              <caret line="466" column="14" lean-forward="false" selection-start-line="466" selection-start-column="8" selection-end-line="466" selection-end-column="14" />
+              <folding>
+                <element signature="n#!!block;n#io_intro#0" expanded="false" />
+                <element signature="n#!!block;n#io_disqus#0" expanded="false" />
+                <element signature="n#!!block;n#io_loadmodal#0" expanded="false" />
+                <element signature="n#!!block;n#io_team_filter#0" expanded="false" />
+                <element signature="n#!!block;n#io_twitter_fetcher#0" expanded="false" />
+                <element signature="n#!!block;n#io_pop_item#0" expanded="false" />
+                <element signature="n#!!block;n#io_pop#0" expanded="false" />
+                <element signature="n#!!block;n#io_form_contact#0" expanded="false" />
+                <element signature="n#!!block;n#io_crypto_prices#0" expanded="false" />
+                <element signature="n#!!block;n#io_cut_arr#0" expanded="false" />
+                <element signature="n#!!block;n#io_crypto_chart#0" expanded="false" />
+                <element signature="n#!!block;n#io_fluid_videos#0" expanded="false" />
+                <element signature="e#13537#14135#0" expanded="false" />
+                <element signature="n#!!block;n#io_nav#0" expanded="false" />
+                <element signature="n#!!block;n#io_altnav#0" expanded="false" />
+                <element signature="n#!!block;n#io_subajax_loader#0" expanded="false" />
+                <element signature="n#!!block;n#io_load_subpage#0" expanded="false" />
+                <element signature="n#!!block;n#io_goto_page#0" expanded="false" />
+                <element signature="n#!!block;n#io_alter_title#0" expanded="false" />
+                <element signature="n#!!block;n#io_title_typing#0" expanded="false" />
+                <element signature="n#!!block;n#io_which_way_alter#0" expanded="false" />
+                <element signature="n#!!block;n#iohk_video_modal_update#0" expanded="false" />
+                <element signature="n#!!block;n#iohk_video_preview#0" expanded="false" />
+                <element signature="n#!!block;n#iohk_videos_load#0" expanded="false" />
+                <element signature="n#!!block;n#iohk_videos_load_call#0" expanded="false" />
+                <element signature="n#!!block;n#io_which_way#0" expanded="false" />
+                <element signature="n#!!block;n#io_hash_tabs#0" expanded="false" />
+                <element signature="n#!!block;n#io_load_commits#0" expanded="false" />
+                <element signature="n#!!block;n#io_load_rss#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -30,12 +86,34 @@
     <findStrings>
       <find>particles_data</find>
       <find>iolab_share_on_Twitter</find>
+      <find>io_intro_explorer</find>
+      <find>main-body</find>
+      <find>middle</find>
+      <find>io_loadto</find>
+      <find>io_load_page</find>
+      <find>io_intro_num</find>
+      <find>$.getScript(</find>
+      <find>io_intro</find>
+      <find>homeloaded</find>
+      <find>io_which_way</find>
+      <find>io_which_way_alter</find>
+      <find>io_retitle</find>
+      <find>webglAvailable</find>
+      <find>jobspage</find>
+      <find>io_nav</find>
+      <find>chosen</find>
+      <find>ioh</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/iohk.htm" />
+        <option value="$PROJECT_DIR$/static/functions.js" />
+        <option value="$PROJECT_DIR$/index.htm" />
       </list>
     </option>
   </component>
@@ -49,6 +127,7 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -64,24 +143,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="iohk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iohk" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas_hover" type="b2602c69:ProjectViewProjectNode" />
+              <item name="canvas_hover" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iohk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iohk" type="462c0819:PsiDirectoryNode" />
+              <item name="canvas_hover" type="b2602c69:ProjectViewProjectNode" />
+              <item name="canvas_hover" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -116,11 +195,12 @@
       <updated>1516950248647</updated>
       <workItem from="1516950250944" duration="2974000" />
       <workItem from="1516958126987" duration="50000" />
+      <workItem from="1517018538577" duration="4359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3024000" />
+    <option name="totallyTimeSpent" value="8635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -130,8 +210,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -141,7 +222,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -152,15 +232,28 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#7162#8322#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iohk.htm" />
+    <entry file="file://$PROJECT_DIR$/iohk.htm" />
     <entry file="file://$PROJECT_DIR$/iohk.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -168,7 +261,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1875">
+          <caret line="466" column="14" lean-forward="false" selection-start-line="466" selection-start-column="8" selection-end-line="466" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!block;n#io_intro#0" expanded="false" />
+            <element signature="n#!!block;n#io_disqus#0" expanded="false" />
+            <element signature="n#!!block;n#io_loadmodal#0" expanded="false" />
+            <element signature="n#!!block;n#io_team_filter#0" expanded="false" />
+            <element signature="n#!!block;n#io_twitter_fetcher#0" expanded="false" />
+            <element signature="n#!!block;n#io_pop_item#0" expanded="false" />
+            <element signature="n#!!block;n#io_pop#0" expanded="false" />
+            <element signature="n#!!block;n#io_form_contact#0" expanded="false" />
+            <element signature="n#!!block;n#io_crypto_prices#0" expanded="false" />
+            <element signature="n#!!block;n#io_cut_arr#0" expanded="false" />
+            <element signature="n#!!block;n#io_crypto_chart#0" expanded="false" />
+            <element signature="n#!!block;n#io_fluid_videos#0" expanded="false" />
+            <element signature="e#13537#14135#0" expanded="false" />
+            <element signature="n#!!block;n#io_nav#0" expanded="false" />
+            <element signature="n#!!block;n#io_altnav#0" expanded="false" />
+            <element signature="n#!!block;n#io_subajax_loader#0" expanded="false" />
+            <element signature="n#!!block;n#io_load_subpage#0" expanded="false" />
+            <element signature="n#!!block;n#io_goto_page#0" expanded="false" />
+            <element signature="n#!!block;n#io_alter_title#0" expanded="false" />
+            <element signature="n#!!block;n#io_title_typing#0" expanded="false" />
+            <element signature="n#!!block;n#io_which_way_alter#0" expanded="false" />
+            <element signature="n#!!block;n#iohk_video_modal_update#0" expanded="false" />
+            <element signature="n#!!block;n#iohk_video_preview#0" expanded="false" />
+            <element signature="n#!!block;n#iohk_videos_load#0" expanded="false" />
+            <element signature="n#!!block;n#iohk_videos_load_call#0" expanded="false" />
+            <element signature="n#!!block;n#io_which_way#0" expanded="false" />
+            <element signature="n#!!block;n#io_hash_tabs#0" expanded="false" />
+            <element signature="n#!!block;n#io_load_commits#0" expanded="false" />
+            <element signature="n#!!block;n#io_load_rss#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding>
+            <element signature="e#7162#8322#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/GPUFluid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <marker date="1516956410613" expanded="true" signature="452165:452201" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

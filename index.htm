@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html class="js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Cascading Disruption - Input Output</title>
+
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+<link rel="stylesheet" href="./static/base.css" type="text/css" media="all">
+<link rel="stylesheet" href="./static/iohk.css" type="text/css" media="all">
+
+
+
+<!--[if IE]>
+<script>IE = true;</script>
+<![endif]-->
+
+<!--[if lte IE 11]>
+<script>webglIE = false;</script>
+<style>#io_intro_nav {display: none !important}</style>
+<![endif]-->
+
+<!--[if lte IE 10]>
+<script src="/static/lowie.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+<link rel="stylesheet"  href="/static/ie.css" type="text/css" media="all" />
+<script src="/static/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 8]>
+<script>lowerie = true;</script>
+<link rel="stylesheet"  href="/static/ieoff.css" type="text/css" media="all" />
+<![endif]-->
+
+
+</head>
+
+<div id="main-body">
+
+    <input type="text" value="w423424">
+    <div id="middle" class="middle">
+        <div id="main" class="container-fluid">
+
+
+            <div class="intro box bigger">
+                <div class="fader">
+
+
+                    <div id="entry" class="">
+
+                        <!--<img src="./static/test-swiper2.jpg" alt="">-->
+
+                    </div>
+
+
+
+                    <div id="io_intro_hud" class=""></div>
+
+                    <div id="io_intro" class="ready waiting">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+</div>
+
+<script>
+    var homeloaded = false;
+    var pageslug = 'home';
+    var webglAvailable = true;
+    var jobspage = 'careers';
+    var IE = false;
+
+</script>
+
+<canvas width="1842" height="1518" id="app" style="width: 100%; height: 900px; background: rgb(0, 0, 0); margin: 0px; padding: 0px;"></canvas>
+
+<script type="text/javascript" src="./static/jquery-1.11.2.min.js"></script>
+<!--<script type="text/javascript" src="./static/functions.js"></script>-->
+<script>
+    $(window).load(function(){
+        io_which_way();
+    });
+    $(function () {
+        $.getScript( "./static/GPUFluid.js", function( data, textStatus, jqxhr ) {
+            $.getScript( "./static/start.js", function( data, textStatus, jqxhr ) {
+                $.getScript( "./static/hammer.js", function( data, textStatus, jqxhr ) {
+                    $.getScript( "./static/app.js", function( data, textStatus, jqxhr ) {
+                        homeloaded = true;
+                        $("#io_intro .preloader").remove();
+                        $("#entry").removeClass('opa0');
+                        $("#entry").removeClass('out');
+                        io_intro();
+                    });
+                });
+            });
+        });
+    })
+    function io_intro() {
+
+        IOHP2();
+
+        setTimeout(function(){
+            $("#io_intro_hint_but").addClass('ready');
+            $("#app").click(function () {
+                $("#io_intro_hint").addClass('go');
+                $("#io_intro_hint_but").remove();
+            })
+            $("#app").on('swipe',function () {
+                $("#io_intro_hint").addClass('go');
+                $("#io_intro_hint_but").remove();
+            });
+            $("#app").on('touchstart',function () {
+                $("#io_intro_hint").addClass('go');
+                $("#io_intro_hint_but").remove();
+            });
+            $("#app").on('click',function () {
+                $("#io_intro_hint").addClass('go');
+                $("#io_intro_hint_but").remove();
+            });
+            $("#app").on('mousemove',function () {
+                $("#io_intro_hint").addClass('go');
+                $("#io_intro_hint_but").remove();
+            });
+
+            $("#entry .desc").removeClass('none');
+            setTimeout(function(){
+                jQuery("#io_intro_ignit,#io_intro_start").addClass('in');
+            },150);
+        },200);
+
+        //io_intro_init();
+
+        $("#io_intro_ignit,#io_intro_start-0").click(function(){
+            io_intro_init();
+            $("#app").remove();
+        });
+        $("#io_intro_start-1").click(function(){
+            io_intro_num = 1;
+            $("#app").remove();
+            io_intro_init();
+        });
+        $("#io_intro_start-2").click(function(){
+            io_intro_num = 2;
+            $("#app").remove();
+            io_intro_explorer();
+        });
+    }
+
+    function io_ajaxload() {
+        $(".ajaxload").unbind('click');
+        $(".ajaxload").on('click',function(e){
+            var url = $(this).attr('href');
+            var obj = $(this).data('ide');
+            var target = $(this).data('hash');
+            var active = $(this).data('active');
+            var callback = $(this).data('callback');
+
+            io_loadto = [obj,target];
+
+            $(active).removeClass('active');
+            e.preventDefault();
+            History.pushState(io_hist, "IOHK",url);
+            //io_load_page(url,obj,target,callback);
+            $(this).closest(active).addClass('active');
+        });
+    }
+
+    function io_load_page(url,obj,hash,callback){
+        choice = url;
+        if(hash == '#main'){
+            if($("body").hasClass('transin')){
+                $("body").removeClass('transin');
+            }
+        }else{
+            $(obj).addClass('transout');
+        }
+        var url_a = url.split('/');
+        if(iolang == 'en'){
+            chosen = url_a[url_a.length-2];
+        }else{
+            chosen = url_a[url_a.length-3];
+        }
+        if(url.match('team')){
+            chosen = 'team';
+        }
+        if(url.match('blog')){
+            chosen = 'blog';
+        }
+        if(url.match('papers')){
+            chosen = 'papers';
+        }
+        setTimeout(function(){
+            $(obj).load(url+' '+hash,function(){
+                io_nav();
+                var bodyvar = chosen;
+                if(bodyvar == ''){
+                    bodyvar = 'home';
+                }
+                $("#page").attr('class',bodyvar);
+                $("title").text($("h1 .title").text()+' - '+sitename);
+                //io_retitle();
+                $("html, body").animate({ scrollTop: 0 }, 300);
+
+                setTimeout(function(){
+
+                    if(hash == '#main'){
+                        if(!$("body").hasClass('transin')){
+                            $("body").addClass('transin');
+                        }
+                    }else{
+                        $(obj).removeClass('transout');
+                    }
+
+                },100);
+
+                io_which_way_alter();
+                if(typeof callback == 'function'){
+                    return callback;
+                }
+
+            });
+
+        },500);
+    }
+
+    function io_which_way(){
+        var ww = $(window).width();
+        var wh = $(window).height();
+        var row = wh/20;
+        chosen = pageslug;
+        io_nav();
+        io_which_way_alter();
+        if(!$("body").hasClass('introin')){
+            $("body").addClass('introin');
+        }
+    }
+
+    function io_nav() {
+        $(".subpages a,a.ajaxhref").unbind('click');
+        $(".subpages a,a.ajaxhref").click(function(e){
+            e.preventDefault();
+            $(".subpages .active,a.ajaxhref").removeClass('active');
+            $(this).parent().addClass('active');
+            var urlchoice = $(this).attr('href');
+            choice = urlchoice;
+            io_loadto[0] = '#middle';
+            io_loadto[1] = '#main';
+            if(!lowie){
+                History.pushState(io_hist, "IOHK",urlchoice);
+                //alert(urlchoice);
+                if(document.location.hash){
+                    //alert("hash");
+                    document.location.href = urlchoice;
+                }
+                /*
+                setTimeout(function(){
+                if(document.location.hash){
+                    //alert("hash");
+                    io_load_page(urlchoice,'#middle','#main',null);
+                }else{
+                    //alert("no hash");
+                }
+                },500);
+    */
+            }else{
+                document.location.href = urlchoice;
+            }
+        });
+        io_ajaxload();
+        //io_altnav();
+    }
+    function io_which_way_alter(){
+        //$("title").text($("h1").text()+' - '+sitename);
+        //$("html, body").animate({ scrollTop: 0 }, 300);
+
+        // io_translate_update();
+        if(!webglAvailable){
+            $(".io_webgl").remove();
+        }
+
+        io_zotero_setup = false;
+
+        if(chosen == jobspage){
+            //io_subajax_loader();
+            //$(".sidecol li a:first").trigger('click');
+            //io_job_list();
+
+        }
+        if($("#main").hasClass('container-fluid')){
+            $("#main").attr('class','container');
+        }
+        if($("#page").hasClass('intropage')){
+            $("#page").removeClass('intropage');
+        }
+
+        if($("#io_intro").hasClass('ready')){
+            $("#main").attr('class','container-fluid');
+            $("#page").addClass('intropage home');
+            $.getScript( "./static/GPUFluid.js", function( data, textStatus, jqxhr ) {
+                $.getScript( "./static/start.js", function( data, textStatus, jqxhr ) {
+                    $.getScript( "./static/hammer.js", function( data, textStatus, jqxhr ) {
+                        $.getScript( "./static/app.js", function( data, textStatus, jqxhr ) {
+                            homeloaded = true;
+                            $("#io_intro .preloader").remove();
+                            $("#entry").removeClass('opa0');
+                            $("#entry").removeClass('out');
+                            io_intro();
+                            $("#entry .buttons,.experience_hint").removeClass('opa0');
+                        });
+                    });
+                });
+
+            });
+
+
+        }
+
+        if($(".entry").data('type') == 'blog-post'){
+            io_fluid_videos();
+        }
+        if($("#page").hasClass('blog') || $("#page").hasClass('video')){
+            io_fluid_videos();
+        }
+        if($("#page").hasClass('papers')){
+            io_fluid_videos();
+        }
+
+
+        if($("#nav-tabs").hasClass('nav-tabs')){
+            io_hash_tabs();
+        }
+
+        if($("#io_project_commits").hasClass('ready')){
+            $.getScript( "//static.iohk.io/iohk/js/rss/jquery.rss.js", function( data, textStatus, jqxhr ) {
+                $("#io_project_commits").empty();
+                io_load_commits();
+            });
+
+        }
+        if($("#zotero_load").hasClass('ready')){
+            io_zotero_setup = false;
+            io_zotero();
+        }
+
+        if(!$("body").hasClass('transin')){
+            $("body").addClass('transin');
+        }
+        if($("#crypto_prices").hasClass('crypto_prices')){
+            io_crypto_prices();
+        }
+
+        if($("#form_contact").hasClass('form_contact')){
+            io_form_contact();
+        }
+        if($("#twitter_fetcher").hasClass('fetch')){
+            $.getScript( "//static.iohk.io/iohk/js/twitterFetcher_min.js", function( data, textStatus, jqxhr ) {
+                var username = $("#twitter_fetcher").attr('username');
+                var count = $("#twitter_fetcher").attr('count');
+                io_twitter_fetcher(username,count);
+            });
+        }
+        if($("#cryptochart").hasClass('cryptochart')){
+            var exchange = $("#cryptochart").data('exchange');
+            var currency = $("#cryptochart").data('currency');
+            var compare = $("#cryptochart").data('compare');
+            io_crypto_chart(exchange,currency,compare);
+        }
+        if($("#main").hasClass('blog')){
+            $(".entry a[href^='http://']").attr("target","_blank");
+            $(".entry a[href^='https://']").attr("target","_blank");
+        }
+
+        $(".modal-image").each(function(){
+            $(this).click(function(e){
+                e.preventDefault();
+                var url = $(this).attr('href');
+                $("#iohk-modal-load").html('<img src="'+url+'" alt="" class="fullwidth" />');
+                $("#iohk-modal").modal();
+            });
+        });
+
+        if($(".iohk-video-list").hasClass('youtube')){
+            iohk_videos();
+        }
+
+        if(webglAvailable){
+            if(!IE){
+                if($("#subheader").hasClass('particles')){
+                    $("#subheader-particles").height($("#subheader").height());
+                    $("#subheader-particles").css({overflow: 'hidden'});
+                    particlesJS.load('subheader-particles', '');
+
+
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
